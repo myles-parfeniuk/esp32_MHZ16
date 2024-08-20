@@ -26,6 +26,7 @@ C++ esp-idf driver component for Winsen Electronic MH-Z16 CO2 sensor.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Wiring 
+![image](README_images/wiring.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Adding to Project
