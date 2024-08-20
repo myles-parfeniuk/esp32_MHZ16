@@ -1,0 +1,33 @@
+menu "esp32_MHZ16"
+
+    menu "GPIO Configuration"
+        
+        config ESP32_MHZ16_GPIO_TX
+            int "TX GPIO NUM" 
+            range 0 50
+            default 17
+            help
+                UART TX GPIO pin connected to MHZ16 RX pin.
+
+                    
+        config ESP32_MHZ16_GPIO_RX
+            int "RX GPIO NUM" 
+            range 0 50
+            default 16
+            help
+                UART RX GPIO pin connected to MHZ16 TX pin.
+                
+    endmenu # GPIO Config
+
+    menu "UART Configuration"
+
+        config ESP32_MHZ16_UART_HOST
+            int "UART Host Peripheral" 
+            range 0 2
+            default 2
+            help
+                UART controller peripheral inside ESP32 to handle communication with MHZ16. 
+
+    endmenu #UART Configuration
+
+endmenu
