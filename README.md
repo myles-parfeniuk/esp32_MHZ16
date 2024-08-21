@@ -28,9 +28,14 @@ C++ esp-idf driver component for Winsen Electronic MH-Z16 CO2 sensor.
 ## Wiring 
 The default wiring is depicted below, it can be changed at driver initialization (see example section).  
 
-If your esp32 does not have the GPIO pin numbers depicted below, you **must change the default GPIO settings in menuconfig**. See the Menuconfig section. 
+If your esp32 does not have the GPIO pin numbers depicted below, you **must change the default GPIO settings in menuconfig**. See the Menuconfig section.  
 
-![image](README_images/wiring.png)
+![image](README_images/wiring.png)  
+
+Note the sensor requires a +5v power supply, but uses a 3.3v logic level for UART. In the photo below I am using a boost converter to step up the 3.3v supply from the esp32 to +5v, alternatively, a more suitable power source or battery can be used. The supply must be able to supply 150mA. 
+
+![image](README_images/breadboard.png)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Adding to Project
