@@ -19,7 +19,10 @@
 </ol>
 
 # About
-C++ esp-idf driver component for Winsen Electronic MH-Z16 CO2 sensor.
+C++ esp-idf driver component for Winsen Electronic MH-Z16 CO2 sensor.  
+
+The esp-idf driver components available on github currently all use Arduino libraries.  
+This is a much lighter weight approach that ditches the Arduino Serial library, ensuring your heap doesn't become swiss cheese.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Getting Started 
